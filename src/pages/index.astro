@@ -1,22 +1,42 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 import Card from '../components/Card.astro';
 import NavBar from '../components/NavBar.astro';
 import Hero from '../components/Hero.astro';
 
+const services = await getCollection('services');
+
+// const allCards = await Astro.glob("../content/services/*.md");
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<NavBar></NavBar>
-	<Hero></Hero>
-<!-- 	<Card 
-		icon='*'
-		title='Servicios'
-		description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem omnis atque culpa repellendus.'
-		>
+	<NavBar />
+	<Hero/>
+	<div class="flex w-full h-fit p-8 items-center justify-evenly">
+		<!-- {
+			allCards.map(item => (
+			<Card 
+				title={item?.frontmatter.title}
+				image={item?.frontmatter.image}
+				description={item?.frontmatter.description}
+			>
+			</Card>
+			))
+		} -->
 
-	</Card> -->
+		{
+			services.map(servis => {
+				const { slug, data } = servis
+				const { title, icon, listServices } = data
+				
+				return(
+					<Card image={icon} title={title} description={listServices.serv1}></Card>
+				)
+			})
+		}
+	</div>
 </Layout>
