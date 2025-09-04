@@ -8,15 +8,18 @@ import Hero from '../components/Hero.astro';
 
 const services = await getCollection('services');
 
+const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 // const allCards = await Astro.glob("../content/services/*.md");
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Layout title='Reforma3-Building'>
 	<NavBar />
 	<Hero/>
-	<div class="flex w-full h-fit p-8 items-center justify-evenly">
+
+	<!-- Service's section -->
+	<section class="flex flex-col w-full h-fit py-8 px-16 items-center justify-center">
 		<!-- {
 			allCards.map(item => (
 			<Card 
@@ -27,16 +30,21 @@ const services = await getCollection('services');
 			</Card>
 			))
 		} -->
-
-		{
-			services.map(servis => {
-				const { slug, data } = servis
-				const { title, icon, listServices } = data
-				
-				return(
-					<Card image={icon} title={title} description={listServices.serv1}></Card>
-				)
-			})
-		}
-	</div>
+		<h2 class="font-bold text-3xl mb-8">SERVICIOS</h2>
+		<p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
+		<div class="flex w-full h-fit items-center justify-between">
+			{
+				services.map((servis, index) => {
+					const { slug, data } = servis
+					const { title, icon, listServices } = data
+					
+					const color = bgColors[index % bgColors.length];
+					const textColor = color === '#0A0A0A' ? 'text-white' : 'text-black'; 
+					return(
+						<Card image={icon} title={title} description={listServices.serv1} bgColor={color} textColorClass={textColor}></Card>
+					)
+				})
+			}
+		</div>
+	</section>
 </Layout>
