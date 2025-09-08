@@ -2,11 +2,13 @@
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import Card from '../components/Card.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ArquetiposCard from '../components/ArquetiposCard.astro';
 import NavBar from '../components/NavBar.astro';
 import Hero from '../components/Hero.astro';
 
 const services = await getCollection('services');
+const arquetipos = await getCollection('arquetipos')
 
 const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 // const allCards = await Astro.glob("../content/services/*.md");
@@ -41,10 +43,26 @@ const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 					const color = bgColors[index % bgColors.length];
 					const textColor = color === '#0A0A0A' ? 'text-white' : 'text-black'; 
 					return(
-						<Card image={icon} title={title} description={listServices.serv1} bgColor={color} textColorClass={textColor}></Card>
+						<ServiceCard image={icon} title={title} description={listServices.serv1} bgColor={color} textColorClass={textColor}></ServiceCard>
 					)
 				})
 			}
 		</div>
+	</section>
+	
+	<!-- Arquetipe's section -->
+	<section class="flex flex-col items-center justify-between py-8 px-16 w-full h-auto">
+		<h2 class="font-bold text-3xl mb-8">ARQUETIPOS</h2>
+		<p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
+		{
+			arquetipos.map(arquetipo => {
+				const { data } = arquetipo
+				const { title, description, img } = data
+
+				return(
+					<ArquetiposCard title={title} description={description} image={img}  />
+				)
+			})
+		}
 	</section>
 </Layout>
