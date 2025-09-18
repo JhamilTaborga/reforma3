@@ -6,6 +6,8 @@ import ServiceCard from '../components/ServiceCard.astro';
 import ArquetiposCard from '../components/ArquetiposCard.astro';
 import NavBar from '../components/NavBar.astro';
 import Hero from '../components/Hero.astro';
+import Contact from '../components/Contact.astro'
+import Footer from '../components/Footer.astro';
 
 const services = await getCollection('services');
 const arquetipos = await getCollection('arquetipos')
@@ -34,7 +36,7 @@ const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 		} -->
 		<h2 class="font-bold text-3xl mb-8">SERVICIOS</h2>
 		<p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
-		<div class="flex w-full h-fit items-center justify-between">
+		<div class="flex flex-col lg:flex-row gap-20 w-full h-fit px-auto py-6 items-center justify-between">
 			{
 				services.map((servis, index) => {
 					const { slug, data } = servis
@@ -65,4 +67,6 @@ const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 			})
 		}
 	</section>
+	<Contact />
+	<Footer />
 </Layout>
