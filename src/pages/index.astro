@@ -34,8 +34,8 @@ const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 			</Card>
 			))
 		} -->
-		<div class="flex flex-col w-full h-auto pt-8 pb-2 px-8 md:px-12">
-			<h2 class="font-bold text-center text-3xl mb-4 md:mb-8">SERVICIOS</h2>
+		<div class="flex flex-col gap-4 w-full h-auto pt-8 pb-2 px-8 md:px-12">
+			<h2 class="font-bold text-3xl text-center">SERVICIOS</h2>
 			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
 		</div>
 		<div class="flex flex-row gap-4 md:gap-16 w-full py-4 px-8 md:px-12 h-fit justify-between items-center overflow-x-scroll">
@@ -55,19 +55,23 @@ const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 	</section>
 	
 	<!-- Arquetipe's section -->
-	<section class="flex flex-col items-center justify-between py-8 px-16 w-full h-auto">
-		<h2 class="font-bold text-3xl mb-8">ARQUETIPOS</h2>
-		<p class="mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
-		{
-			arquetipos.map(arquetipo => {
-				const { data } = arquetipo
-				const { title, description, img } = data
+	<section class="flex flex-col w-full h-auto">
+		<div class="flex flex-col gap-4 w-full h-auto pt-8 pb-0 px-8 md:px-12">
+			<h2 class="font-bold text-3xl text-center">ARQUETIPOS</h2>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, labore distinctio aliquam dolor sapiente numquam doloribus eius aperiam excepturi vitae vero autem iure qui! Eius vitae a corporis hic atque?</p>
+		</div>
+		<div class="flex flex-col gap-4 md:gap-8 px-8 py-8">
+			{
+				arquetipos.map(arquetipo => {
+					const { data } = arquetipo
+					const { title, description, img } = data
 
-				return(
-					<ArquetiposCard title={title} description={description} image={img}  />
-				)
-			})
-		}
+					return(
+						<ArquetiposCard title={title} description={description} image={img}  />
+					)
+				})
+			}
+		</div>
 	</section>
 	<Contact />
 	<Footer />
