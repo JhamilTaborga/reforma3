@@ -1,0 +1,453 @@
+<section class="lg:w-[900px] w-screen h-fit flex flex-col md:flex-row rounded-4xl">
+  <!-- Seccion de nav de los servicios -->
+  <aside class="rounded-tl-xl rounded-bl-xl bg-gray px-4 sm:px-0 border-2 border-l-0 border-t-0 border-b-dark-gray border-r-0 md:border-b-0 md:border-r-2 md:border-r-dark-gray">
+    <nav class="flex md:flex-col md:gap-2 sm:gap-0.5 overflow-x-scroll md:overflow-x-hidden">
+      <button
+        data-service="ingineering"
+        class="rounded-tl-xl service-nav-btn text-gray-blue w-full flex items-center gap-3 p-4 transition-all duration-300 hover:bg-gray-100"
+      >
+        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+        </svg>
+        <span class="text-sm font-medium text-left">Ingeniería</span>
+      </button>
+
+      <button
+        data-service="documents"
+        class="service-nav-btn text-gray-blue w-full flex items-center gap-3 p-4 transition-all duration-300 hover:bg-gray-100"
+      >
+        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        <span class="font-medium text-left">Trámites</span>
+      </button>
+
+      <button
+        data-service="design"
+        class="service-nav-btn text-gray-blue w-full flex items-center gap-3 p-4 transition-all duration-300 hover:bg-gray-100"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+        </svg>
+        <span class="font-medium text-left">Diseño arquitectónico</span>
+      </button>
+
+      <button
+        data-service="construction"
+        class="service-nav-btn text-gray-blue w-full flex items-center gap-3 p-4 transition-all duration-300 hover:bg-gray-100"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+        </svg>
+        <span class="font-medium text-left">Construcción integral</span>
+      </button>
+    </nav>
+  </aside>
+
+  <!-- Seccion de el contenido de los servicios -->
+  <div class="p-6 w-screen bg-white">
+    <!-- Service of ingineering -->
+    <div id="content-ingineering" class="service-content transition-all duration-300">
+      <!-- Title -->
+      <div class="flex items-center gap-3 mb-8">
+        <svg class="w-7 h-7 md:w-8 md:h-8 text-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+        </svg>
+        <h2 
+          class="relative inline-block text-2xl md:text-3xl font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-10px] after:h-1 after:w-1/2 after:bg-yellow"
+        >Ingeniería general</h2>
+      </div>
+      <!-- Text -->
+      <p class="text-md md:text-lg text-gray-700 mb-6 md:mb-12 leading-relaxed">
+        Desarrollamos proyectos arquitectónicos completos, desde el análisis del contexto, investigación de arquetipos, hasta la documentación final, aplicando normativas municipales, criterios técnicos y estándares actuales de diseño moderno.
+      </p>
+
+      <!-- Service info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Paquete básico -->
+          <div class="bg-white rounded-2xl p-8 pb-6 shadow-sm border border-gray-100">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Paquete básico</h3>
+            <p class="text-gray-600 mb-4">Ideal para tener una visión clara de tu proyecto.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Planos arquitectónicos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Diseño de fachadas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Distribución de espacio</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors duration-300">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+
+          <!-- Paquete plus -->
+          <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl p-6 shadow-lg relative">
+            <div class="absolute top-4 right-4">
+              <span class="bg-black text-white text-xs border-2 border-white font-bold px-2 py-1 rounded-full">Popular</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Paquete plus</h3>
+            <p class="text-gray-900 mb-4">Una solución completa para visualizar cada detalle.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-900 font-medium">Todo lo del paquete básico</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-900 font-medium">Renders y visualizaciones 3D</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-900 font-medium">Selección de materiales</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-900 font-medium">Diseño de iluminación</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-black hover:bg-gray-900 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 border-3 border-white shadow-xl">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <!-- Service of documents -->
+    <div id="content-documents" class="service-content hidden transition-all duration-300">
+      <!-- Title -->
+      <div class="flex items-center gap-3 mb-8">
+        <svg class="w-7 h-7 md:w-8 md:h-8 text-skyblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+        </svg>
+        <h2 
+          class="text-blue relative inline-block text-2xl md:text-3xl font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-10px] after:h-1 after:w-1/2 after:bg-skyblue"
+        >Trámites y documentos</h2>
+      </div>
+      <!-- Text -->
+      <p class="text-md md:text-lg text-gray-700 mb-6 md:mb-12 leading-relaxed">
+        Desarrollamos proyectos arquitectónicos completos, desde el análisis del contexto, investigación de arquetipos, hasta la documentación final, aplicando normativas municipales, criterios técnicos y estándares actuales de diseño moderno.
+      </p>
+
+      <!-- Service info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Paquete básico -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Paquete básico</h3>
+            <p class="text-gray-600 mb-4">Ideal para tener una visión clara de tu proyecto.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Planos arquitectónicos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Diseño de fachadas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Distribución de espacio</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors duration-300">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+
+          <!-- Paquete plus -->
+          <div class="bg-skyblue rounded-2xl p-6 shadow-lg relative">
+            <div class="absolute top-4 right-4">
+              <span class="bg-black text-white text-xs font-bold border-2 border-white px-2 py-1 rounded-full">Popular</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">Paquete plus</h3>
+            <p class="text-white mb-4">Una solución completa para visualizar cada detalle.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Todo lo del paquete básico</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Renders y visualizaciones 3D</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Selección de materiales</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Diseño de iluminación</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-black hover:bg-white text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 border-3 border-white shadow-xl">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <!-- Service of design -->
+    <div id="content-design" class="service-content hidden transition-all duration-300">
+      <!-- Title -->
+      <div class="flex items-center gap-3 mb-8">
+        <svg class="w-7 h-7 md:w-8 md:h-8 text-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+        </svg>
+        <h2 
+          class="relative inline-block text-2xl md:text-3xl font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-10px] after:h-1 after:w-1/2 after:bg-blue"
+        >Diseño arquitectónico</h2>
+      </div>
+      <!-- Text -->
+      <p class="text-md md:text-lg text-gray-700 mb-6 md:mb-12 leading-relaxed">
+        Desarrollamos proyectos arquitectónicos completos, desde el análisis del contexto, investigación de arquetipos, hasta la documentación final, aplicando normativas municipales, criterios técnicos y estándares actuales de diseño moderno.
+      </p>
+
+      <!-- Service info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Paquete básico -->
+          <div class="bg-white rounded-2xl p-8 pb-6 shadow-sm border border-gray-100">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Paquete básico</h3>
+            <p class="text-gray-600 mb-4">Ideal para tener una visión clara de tu proyecto.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Planos arquitectónicos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Diseño de fachadas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Distribución de espacio</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors duration-300">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+
+          <!-- Paquete plus -->
+          <div class="bg-blue rounded-2xl p-6 shadow-lg relative">
+            <div class="absolute top-4 right-4">
+              <span class="bg-black text-white text-xs font-bold border-2 border-white px-2 py-1 rounded-full">Popular</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">Paquete plus</h3>
+            <p class="text-white mb-4">Una solución completa para visualizar cada detalle.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Todo lo del paquete básico</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Renders y visualizaciones 3D</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Selección de materiales</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Diseño de iluminación</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-black hover:bg-white text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 border-3 border-white shadow-xl">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Service of construction -->
+    <div id="content-construction" class="service-content hidden transition-all duration-300">
+      <!-- Title -->
+      <div class="flex items-center gap-3 mb-8">
+        <svg class="w-7 h-7 md:w-8 md:h-8 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+        </svg>
+        <h2 
+          class="relative inline-block text-2xl md:text-3xl font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-10px] after:h-1 after:w-1/2 after:bg-red"
+        >Construcción integral</h2>
+      </div>
+      <!-- Text -->
+      <p class="text-md md:text-lg text-gray-700 mb-6 md:mb-12 leading-relaxed">
+        Desarrollamos proyectos arquitectónicos completos, desde el análisis del contexto, investigación de arquetipos, hasta la documentación final, aplicando normativas municipales, criterios técnicos y estándares actuales de diseño moderno.
+      </p>
+
+      <!-- Service info -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Paquete básico -->
+          <div class="bg-white rounded-2xl p-8 pb-6 shadow-sm border border-gray-100">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Paquete básico</h3>
+            <p class="text-gray-600 mb-4">Ideal para tener una visión clara de tu proyecto.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Planos arquitectónicos</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Diseño de fachadas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-gray-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-700">Distribución de espacio</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors duration-300">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+
+          <!-- Paquete plus -->
+          <div class="bg-red rounded-2xl p-6 shadow-lg relative">
+            <div class="absolute top-4 right-4">
+              <span class="bg-black text-white text-xs font-bold border-2 border-white px-2 py-1 rounded-full">Popular</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">Paquete plus</h3>
+            <p class="text-white mb-4">Una solución completa para visualizar cada detalle.</p>
+
+            <ul class="space-y-1 mb-6">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Todo lo del paquete básico</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Renders y visualizaciones 3D</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Selección de materiales</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-white font-medium">Diseño de iluminación</span>
+              </li>
+            </ul>
+
+            <button class="w-full bg-black hover:bg-white text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 border-3 border-white shadow-xl">
+              Contactanos por Whatsapp!
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const navButtons = document.querySelectorAll('.service-nav-btn');
+  
+  navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const service = button.getAttribute('data-service');
+      
+      // Remover clase activa de todos los botones
+      navButtons.forEach(btn => {
+        btn.classList.remove('border', 'border-yellow', 'border-t-0', 'border-r-0','border-b-4', 'md:border-b-1', 'border-l-4','md:border-l-4', 'text-yellow');
+        btn.classList.add('hover:bg-gray-100');
+      });
+      
+      // Agregar clase activa al botón clickeado
+      button.classList.add('border', 'border-yellow', 'border-t-0', 'border-r-0','border-b-4', 'md:border-b-1', 'border-l-0','md:border-l-4', 'text-yellow', );
+      button.classList.remove('hover:bg-gray-100');
+      
+      // Ocultar todo el contenido
+      document.querySelectorAll('.service-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      
+      // Mostrar el contenido seleccionado
+      document.querySelector(`#content-${service}`)?.classList.remove('hidden');
+
+
+
+      // document.getElementById(`content-${service}`).classList.remove('hidden');
+    });
+  });
+</script>

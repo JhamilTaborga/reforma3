@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme{
+  --color-white: #FFFFFF; /* Backgrounds */
+  --color-white-gray: #F2F2F2; /* Background of the entire web */
+  --color-gray: #FBFCFD; /* Background of the nav services */
+  --color-dark-gray: #F1F5F9; /* background of the button of the services */
+  --color-gray-blue: #475569; /* Color text of the nav services */
+  --color-yellow: #EAC435; /* Engineering */
+  --color-skyblue: #A1D2CE; /* Procedures and documents */
+  --color-blue: #172A3A;  /* Architectural design */  
+  --color-red: #A1869E; /* Comprenhensive constrution */
+}
