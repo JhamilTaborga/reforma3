@@ -10,22 +10,24 @@ import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import ServicesSection2 from '../components/ServicesSection2.astro';
 import ServicesSection3 from '../components/ServicesSection3.astro';
+import Hero2 from '../components/Hero2.astro';
 import ServicesSectionMyDesign from '../components/ServicesSectionMyDesign.astro';
+import Navbar2 from '../components/Navbar2.astro';
 import AboutUs from '../components/AboutUs.astro';
 import Contact2 from '../components/Contact2.astro';
 
 const services = await getCollection('services');
 const arquetipos = await getCollection('arquetipos')
 
-const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
+// const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
 // const allCards = await Astro.glob("../content/services/*.md");
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title='Reforma3-Building'>
-	<NavBar />
-	<Hero/>
+	<Navbar2 />
+	<Hero2/>
 
 	<!-- Service's section -->
 	<section class="flex flex-col w-full h-fit my-16 items-center justify-center">
