@@ -2,16 +2,9 @@
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import ServiceCard from '../components/ServiceCard.astro';
-import ArquetiposCard from '../components/ArquetiposCard.astro';
-import NavBar from '../components/NavBar.astro';
-import Hero from '../components/Hero.astro';
-import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
-import ServicesSection2 from '../components/ServicesSection2.astro';
-import ServicesSection3 from '../components/ServicesSection3.astro';
 import Hero2 from '../components/Hero2.astro';
-import ServicesSectionMyDesign from '../components/ServicesSectionMyDesign.astro';
+import ServicesSection from '../components/ServicesSection.astro';
 import Navbar2 from '../components/Navbar2.astro';
 import AboutUs from '../components/AboutUs.astro';
 import Contact2 from '../components/Contact2.astro';
@@ -19,10 +12,6 @@ import Contact2 from '../components/Contact2.astro';
 const services = await getCollection('services');
 const arquetipos = await getCollection('arquetipos')
 
-// const bgColors = ['#5ECBA1', '#0A0A0A', '#CA9DFC', '#F8FE92'];
-// const allCards = await Astro.glob("../content/services/*.md");
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title='Reforma3-Building'>
@@ -32,9 +21,7 @@ const arquetipos = await getCollection('arquetipos')
 	<!-- Service's section -->
 	<section class="flex flex-col w-full h-fit my-16 items-center justify-center">
 		<h2 class="font-bold text-xl w-screen pl-6 md:text-3xl mb-6">NUESTROS SERVICIOS</h2>
-		<!-- <ServicesSection3></ServicesSection3> -->
-		<!-- <ServicesSection2></ServicesSection2> -->
-		<ServicesSectionMyDesign></ServicesSectionMyDesign>
+		<ServicesSection></ServicesSection>
 		<!-- {
 			allCards.map(item => (
 			<Card 
@@ -86,9 +73,6 @@ const arquetipos = await getCollection('arquetipos')
 	</section> -->
 
 	<AboutUs />
-	<!-- <div class="w-full h-3/4 mb-7">
-		<Contact />
-	</div> -->
 	<Contact2 />
 	<Footer />
 </Layout>
