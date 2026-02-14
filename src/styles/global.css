@@ -6,9 +6,9 @@
   --color-gray: #FBFCFD; /* Background of the nav services */
   --color-dark-gray: #F1F5F9; /* background of the button of the services */
   --color-gray-blue: #475569; /* Color text of the nav services */
-  --color-yellow: #EAC435; /* Engineering */
+  --color-yellow: #EAC435; /* Architectural design */
+  --color-blue: #172A3A;  /* Comprenhensive constrution */  
+  --color-red: #A1869E; /* Enginneering */
   --color-skyblue: #A1D2CE; /* Procedures and documents */
-  --color-blue: #172A3A;  /* Architectural design */  
-  --color-red: #A1869E; /* Comprenhensive constrution */
   --color-green: #29A38F; /* Whatsapp */
 }

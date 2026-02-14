@@ -1,0 +1,115 @@
+DISEÑO ARQUITECTONICO:
+  Paquetes: 
+    Paquete 1:
+    Título del paquete: PAQUETE ESENCIAL.
+    Descripción: 
+      - El paquete Esencial está diseñado para quienes necesitan una solución rápida, eficiente y económica para pequeños proyectos o reformas. Ideal para clientes que buscan establecer una base sólida en su diseño arquitectónico sin comprometer la calidad.
+    Contenido del paquete:
+      - Replanteo y medición.
+      - 2 a 3 Reuniones c/7 dias de asesoría con una maqueta virtual 3D (SKP) 3era reunion es básicamente la entrega del proyecto y un repaso.
+      - Planos arquitectónicos de distribución (plantas requeridas)
+      - Render exteriores diurnos 2 imágenes
+      - Recomendaciones p
+
+    Paquete 2:
+    Título del paquete: PAQUETE PLUS
+    Descripción:
+      - Este paquete está pensado para quienes desean dar un paso más allá del diseño esencial. No solo te entregamos la distribución ideal de tus espacios, sino que lo llevamos a la realidad mediante visualizaciones 3D, detalles técnicos y una guía completa para que tu proyecto cobre vida con claridad y precisión.
+      - Ideal para quienes desean visualizar su espacio antes de construir o remodelar, con respaldo técnico y asesoría profesional.
+    Contenido del paquete:
+      - Replanteo y medición
+      - HASTA 5 Reuniones c/7 dias de asesoría con una maqueta virtual 3D (SKP) 3era reunion es básicamente la entrega del proyecto y un repaso.
+      - Planos arquitectónicos de distribución (plantas requeridas).
+      - Render exteriores diurnos 2 imágenes.
+      - Recomendaciones preliminares para materiales y estilos.
+      - Diseño Interior personalizado COCINA, AREAS HUMEDAS, DORMITORIOS A ELECCION, LIVING/ESTUDIO.
+      - Diseño de iluminación decorativa y técnica.
+      - Esquema de mobiliario y equipamiento de cocina.
+      - Plano de acabados y revestimientos. (uno de cielos, uno de pisos).
+      - Renders hasta 4-5 imágenes por planta (Calidad profesional render intermedio).
+
+    Paquete 3:
+    Título del paquete: PAQUETE REFORMA
+    Descripción:
+      - Creado para quienes desean transformar sus espacios con un diseño profesional, visualizaciones de alto impacto, documentación detallada y acompañamiento experto. Todo lo que necesitas para ejecutar tu reforma con total seguridad, sin improvisaciones ni sorpresas.
+    Contenido del paquete:
+      - Replanteo y medición
+      - HASTA 5 Reuniones c/7 dias de asesoría con una maqueta virtual 3D (SKP) 3era reunion es basicamente la entrega del proyecto y un repaso.
+      - Planos arquitectónicos de distribución (plantas requeridad).
+      - Render exteriores diurnos 2 imágenes.
+      - Recomendaciones preliminares para materiales y estilos.
+      - Diseño Interior personalizado COCINA, AREAS HUMEDAS, DORMITORIOS A ELECCION, LIVING/ESTUDIO.
+      - Diseño de iluminación decorativa y técnica.
+      - Esquema de mobiliario y equipamiento.
+      - Plano de acabados y revestimientos. (uno de cielos, uno de pisos).
+      - Renders hasta 4-5 imágenes por planta (Calidad profesional render intermedio).
+      - Calculo estructural.
+      - Presupuesto de obra gruesa.
+      - Cronograma de avance de obra gruesa.
+      - Render 360.
+      - Video recorrido, tres videos de 15 segundos.
+
+Título del servicio:
+  INGENIERIA
+  Descripción:
+    Desarrollamos soluciones de ingeniería integradas al diseño arquitectónico, garantizando seguridad estructural, eficiencia técnica y viabilidad normativa desde la etapa conceptual hasta la ejecución.
+    Nuestro enfoque no es solo cálculo, es ingeniería al servicio de la arquitectura.
+
+  Contenido del servicio:
+    Incluye:
+      • Cálculo estructural (hormigón armado, acero, sistemas mixtos).
+      • Ingeniería hidráulica y sanitaria.
+      • Instalaciones eléctricas y sistemas especiales.
+      • Redes de gas.
+      • Climatización y ventilación.
+      • Sistemas contra incendio.
+      • Coordinación técnica interdisciplinaria.
+      • Modelado y compatibilización de ingenierías con arquitectura.
+  AGENDA CITA
+
+Título del servicio:
+  CONSTRUCCIÓN
+  Descripción:
+    Desarrollamos proyectos bajo un modelo integral de construcción, con control técnico, planificación estratégica y enfoque en calidad arquitectónica.
+    Construimos con la misma precisión con la que diseñamos.
+
+  Contenido del servicio:
+    Modalidades de servicio:
+      • Obra gruesa: estructura, cimentaciones, sistemas portantes
+      • Obra fina: acabados, revestimientos, carpinterías, terminaciones arquitectónicas
+      • Interiores: diseño y ejecución de espacios interiores integrales
+      • Mobiliario: diseño y fabricación de mobiliario a medida
+    Nuestro modelo de trabajo:
+      • Dirección técnica especializada
+      • Control de calidad por etapas
+      • Planificación de obra y cronogramas
+      • Gestión de proveedores
+      • Supervisión permanente
+      • Ejecución alineada al proyecto arquitectónico original
+
+  Información extra:
+    Un solo equipo responsable del diseño y la ejecución, eliminando errores, sobrecostos y distorsiones del proyecto original.
+    
+  AGENDA CITA
+
+Título del servicio:
+  TRAMITES
+  Descripción: 
+    Nos encargamos de todo el proceso administrativo y normativo para que tu proyecto avance sin fricciones, retrasos ni riesgos legales.
+    Tú visualizas tu proyecto. Nosotros lo hacemos viable.
+
+  Contenido del servicio:
+    Incluye:
+      • Gestión de permisos municipales
+      • Trámites en alcaldía
+      • Aprobaciones técnicas
+      • Licencias de construcción
+      • Regularizaciones
+      • Legalizaciones
+      • Subdivisiones y compatibilidades urbanas
+      • Gestión documental completa del proyecto
+  
+  Información extra:
+    Agilidad, seguridad jurídica y cumplimiento normativo sin que el cliente tenga que involucrarse en procesos burocráticos.
+
+AGENDAR CITA
