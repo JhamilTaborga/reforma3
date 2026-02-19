@@ -4,29 +4,79 @@ import Layout from "../layouts/Layout.astro"
 
 <Layout title="404-Error">
 	
-<main class="bg-theme-blue flex min-h-screen items-center justify-center">
-    <div
-      class="container mx-auto flex flex-col items-center px-4 md:flex-row md:items-start md:justify-center md:space-x-12"
-    >
-      <div class="max-w-lg text-center">
-        <h1
-          class="mb-4 bg-gradient-to-r from-[#ff0695] to-[#ff99d1] bg-clip-text text-6xl font-bold text-transparent md:text-7xl lg:text-8xl"
-        >
-          404
-        </h1>
-        <h2 class="mb-4 text-3xl font-bold text-gray-800 uppercase md:text-4xl">
-          Página no encontrada
-        </h2>
-        <p class="mx-8 mb-8 text-lg text-balance text-gray-800 opacity-85">
-          ¡Hola! Lo sentimos, pero no pudimos encontrar lo que buscabas. Verifica que la dirección
-          URL sea correcta.
-        </p>
-        <a
-          href="/"
-          class="bg-primary hover:bg-primary/80 inline-block rounded-full px-8 py-3 font-bold text-gray-800 transition-colors hover:scale-105"
-        >
-          IR AL INICIO
+<!-- Container -->
+  <div class="min-h-screen flex items-center justify-center px-6 py-20">
+    <div class="max-w-2xl w-full text-center">
+      
+      <!-- Logo (opcional) -->
+      <div class="mb-12">
+        <a href="/" class="inline-block">
+          <img 
+            class="h-10 md:h-12 mx-auto opacity-60 hover:opacity-100 transition-opacity" 
+            src="/reforma3-logo-negro-y-blanco.svg" 
+            alt="Reforma3"
+          />
         </a>
       </div>
+
+      <!-- 404 Number -->
+      <div class="mb-8">
+        <h1 class="text-[120px] md:text-[180px] font-bold text-gray-900 leading-none tracking-tight">
+          404
+        </h1>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-12 space-y-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+          Página no encontrada
+        </h2>
+        <p class="text-lg text-gray-600 max-w-md mx-auto leading-relaxed">
+          Lo sentimos, la página que buscas no existe o ha sido movida.
+        </p>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a 
+          href="/"
+          class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+          </svg>
+          Volver al inicio
+        </a>
+
+        <button 
+          onclick="history.back()"
+          class="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 font-semibold px-8 py-4 rounded-xl border-2 border-gray-200 transition-all duration-300"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Ir atrás
+        </button>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="mt-16 pt-16 border-t border-gray-200">
+        <p class="text-sm text-gray-500 mb-6 uppercase tracking-widest font-semibold">
+          Enlaces útiles
+        </p>
+        <div class="flex flex-wrap gap-6 justify-center text-sm">
+          <a href="/#servicios" class="text-gray-700 hover:text-yellow-500 transition-colors font-medium">
+            Servicios
+          </a>
+          <a href="/#nosotros" class="text-gray-700 hover:text-yellow-500 transition-colors font-medium">
+            Nosotros
+          </a>
+          <a href="/#contacto" class="text-gray-700 hover:text-yellow-500 transition-colors font-medium">
+            Contacto
+          </a>
+        </div>
+      </div>
+
     </div>
+  </div>
 </Layout>

@@ -9,7 +9,7 @@ DISEÑO ARQUITECTONICO:
       - 2 a 3 Reuniones c/7 dias de asesoría con una maqueta virtual 3D (SKP) 3era reunion es básicamente la entrega del proyecto y un repaso.
       - Planos arquitectónicos de distribución (plantas requeridas)
       - Render exteriores diurnos 2 imágenes
-      - Recomendaciones p
+      - Recomendaciones preliminares para materiales y estilos.
 
     Paquete 2:
     Título del paquete: PAQUETE PLUS

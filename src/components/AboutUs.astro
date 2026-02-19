@@ -59,21 +59,31 @@
   </div>
 
   <!-- Fundador -->
-  <div class="border-t border-yellow-500/50 pt-18 mb-16">
+  <div class="border-t border-gray-500/30 pt-18 mb-16">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       <!-- Imagen del fundador -->
       <div class="lg:col-span-5">
         <div class="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gray-200 group">
-          <img 
-            alt="Rodrigo Aguilar Arratia - Director General" 
+          <!-- <img 
+            alt="Fotografía de Rodrigo Aguilar Arratia el fundador" 
             class="w-full h-full object-cover contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700" 
-            src="../../team/elArqui.jpeg"
-          />
+            src="../../team/rodrigoFundador.jpeg"
+          /> -->
+          <picture>
+            <source srcset="/team/rodrigoFundador.avif" type="image/avif">
+            <source srcset="/team/rodrigoFundador.webp" type="image/webp">
+            
+            <img 
+              src="/team/rodrigoFundador.png" 
+              alt="Fotografía de Rodrigo Aguilar Arratia el fundador de Reforma3"
+              class="w-full h-full object-cover contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700"
+            >
+          </picture>
           <!-- Overlay gradient -->
           <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
           <!-- Label -->
           <div class="absolute bottom-6 left-6 text-white z-10">
-            <p class="text-xs font-bold tracking-widest uppercase opacity-90">Rodrigo - El arqui</p>
+            <p class="text-xs font-bold tracking-widest uppercase opacity-90">Rodrigo Aguilar - Fundador</p>
           </div>
         </div>
       </div>
@@ -108,7 +118,7 @@
         </div>
 
         <!-- Redes sociales -->
-        <div class="flex gap-3 pt-4">
+<!--         <div class="flex gap-3 pt-4">
           <a 
             class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 hover:border-yellow-500 hover:bg-yellow-500 transition-all group" 
             href="#" 
@@ -127,7 +137,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
