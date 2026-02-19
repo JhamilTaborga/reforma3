@@ -6,7 +6,7 @@
   --color-gray: #FBFCFD; /* Background of the nav services */
   --color-dark-gray: #F1F5F9; /* background of the button of the services */
   --color-gray-blue: #475569; /* Color text of the nav services */
-  --color-yellow: #EAC435; /* Architectural design */
+  --color-yellow: oklch(79.5% 0.184 86.047); /* Architectural design */
   --color-blue: #172A3A;  /* Comprenhensive constrution */  
   --color-red: #A1869E; /* Enginneering */
   --color-sky: #A1D2CE; /* Procedures and documents */
