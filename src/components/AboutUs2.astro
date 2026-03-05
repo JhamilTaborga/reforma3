@@ -1,102 +1,126 @@
-
 ---
 // AboutSection.astro
 ---
 
-<section id="nosotros" class="max-w-[1200px] mx-auto px-10 pt-20">
-  <!-- Introducción Principal -->
-  <div class="mb-28 text-center max-w-[900px] mx-auto">
-    <span class="text-yellow-500 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">
+<section id="nosotros" class="max-w-[1400px] mx-auto px-6 md:px-10 py-20 md:py-32">
+  
+  <!-- Header con badge -->
+  <div class="text-center mb-16">
+    <span class="text-yellow-500 font-bold uppercase tracking-[0.3em] text-xs mb-4 block">
       Sobre el estudio
     </span>
-    <div class="mb-4">
-        <div class="overflow-hidden rounded-2xl bg-gray-200 group">
-          <picture>
-            <source srcset="/team/reformateam.avif" type="image/avif">
-            <source srcset="/team/reformaTeam.webp" type="image/webp">
-            
-            <img 
-              src="/public/team/reformateam.jpg" 
-              alt="Fotografía de todo el equipo de Reforma3"
-              class="w-full h-full object-contain contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-700"
-            >
-          </picture>
-          <!-- Overlay gradient -->
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight max-w-3xl mx-auto">
+      Arquitectura que Transforma el Espacio
+    </h2>
+  </div>
 
-        </div>
-      </div>
+  <!-- Imagen del equipo -->
+  <div class="mb-20 max-w-4xl mx-auto">
+    <div class="overflow-hidden rounded-3xl bg-gray-200 shadow-lg group relative">
+      <!-- Borde decorativo sutil -->
+      <div class="absolute inset-0 rounded-3xl ring-1 ring-inset ring-yellow-500/10"></div>
+      
+      <picture>
+        <source srcset="/team/reformateam.avif" type="image/avif">
+        <source srcset="/team/reformaTeam.webp" type="image/webp">
+        
+        <img 
+          src="/team/reformateam.jpg" 
+          alt="Equipo completo de Reforma3"
+          class="grayscale w-full h-full object-cover contrast-110 brightness-95 group-hover:scale-105 transition-transform duration-700"
+        >
+      </picture>
+    </div>
+  </div>
 
-    <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-[700px] mx-auto text-center mb-4">
-      Somos un estudio de arquitectura y construcción que combina creatividad, técnica y un acompañamiento cercano para convertir ideas en espacios funcionales, estéticos y bien resueltos. Compuesto por los socios: Tatiana Arias Ulloa, Jhenifer Taborga Torez, Jose Callisaya, Andy Landivar y Rodrigo Aguilar Arratia.
+  <!-- Descripción principal -->
+  <div class="max-w-3xl mx-auto mb-24 space-y-8">
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed text-center">
+      Somos un estudio de arquitectura y construcción que combina creatividad, técnica y un 
+      acompañamiento cercano para convertir ideas en espacios funcionales, estéticos y bien resueltos.
     </p>
-    <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-[700px] mx-auto text-center mb-4">
-      Trabajamos de forma integral: desde el diseño inicial, la gestión técnica y la documentación municipal, hasta la construcción completa del proyecto. Nuestro enfoque está basado en escuchar, entender y resolver, siempre priorizando eficiencia, claridad y soluciones que aprovechen al máximo cada recurso.
+    
+    <!-- Socios con detalles amarillos -->
+    <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-yellow-500">
+      <p class="text-base text-gray-600 leading-relaxed">
+        <span class="font-semibold text-gray-900">Compuesto por los socios:</span> Tatiana Arias Ulloa, 
+        Jhenifer Taborga Torez, Jose Callisaya, Andy Landivar y Rodrigo Aguilar Arratia.
+      </p>
+    </div>
+
+    <p class="text-lg text-gray-700 leading-relaxed text-center">
+      Trabajamos de forma integral: desde el diseño inicial, la gestión técnica y la documentación 
+      municipal, hasta la construcción completa del proyecto. Nuestro enfoque está basado en escuchar, 
+      entender y resolver, siempre priorizando eficiencia, claridad y soluciones que aprovechen al 
+      máximo cada recurso.
     </p>
-    <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-[700px] mx-auto text-center">
-      No inventamos nada, investigamos, analizamos y proponemos soluciones coherentes, claras y precisas a través de casos de estudio que fueron y son puestos a prueba por el paso del tiempo.
-    </p>
+
+    <!-- Quote destacada -->
+    <div class="relative py-8">
+      <div class="absolute left-3 top-6 text-yellow-500/20 text-8xl font-serif leading-none">"</div>
+      <p class="text-xl md:text-2xl text-gray-800 leading-relaxed text-center italic relative z-10 px-8">
+        No inventamos nada, investigamos, analizamos y proponemos soluciones coherentes, claras y 
+        precisas a través de casos de estudio que fueron y son puestos a prueba por el paso del tiempo.
+      </p>
+      <div class="absolute right-8 bottom-[-25px] text-yellow-500/20 text-8xl font-serif leading-none">"</div>
+    </div>
   </div>
 
   <!-- Misión y Visión -->
-  <h2 class="text-5xl md:text-6xl font-bold leading-[1.1] mb-20 tracking-tight text-center">
-    Arquitectura que Transforma el Espacio
-  </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20 mb-32">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
+    
     <!-- Misión -->
-    <div class="group">
+    <div class="bg-white rounded-2xl p-8 md:p-10 border-2 border-gray-100 hover:border-yellow-500 transition-all duration-300 group">
       <div class="flex items-start gap-4 mb-6">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center">
-          <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+        <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-yellow-500/10 flex items-center justify-center group-hover:bg-yellow-500 transition-all duration-300">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-yellow-600 group-hover:text-white transition-colors" fill="currentColor" stroke="none" viewBox="0 0 24 24">
+            <path d="M12 1.99999C12.5523 1.99999 13 2.4477 13 2.99999C12.9999 3.55224 12.5522 3.99999 12 3.99999C7.58172 3.99999 4 7.58171 4 12C4.00004 16.4182 7.58174 20 12 20C16.4182 20 19.9999 16.4182 20 12C20 11.4477 20.4477 11 21 11C21.5523 11 22 11.4477 22 12C21.9999 17.5228 17.5228 22 12 22C6.47717 22 2.00004 17.5228 2 12C2 6.47714 6.47715 1.99999 12 1.99999ZM12 5.99999C12.5523 5.99999 13 6.4477 13 6.99999C12.9999 7.55224 12.5522 7.99999 12 7.99999C9.79085 7.99999 7.99999 9.79085 7.99999 12C8.00004 14.2091 9.79088 16 12 16C14.2091 16 15.9999 14.2091 16 12C16 11.4477 16.4477 11 17 11C17.5523 11 18 11.4477 18 12C17.9999 15.3137 15.3137 18 12 18C8.68631 18 6.00004 15.3137 6 12C6 8.68628 8.68629 5.99999 12 5.99999ZM17.6562 2.10057C18.0468 1.71005 18.6807 1.71005 19.0713 2.10057C19.4614 2.49105 19.4615 3.12419 19.0713 3.51463L18.3633 4.22069L18.3642 4.22167C17.9737 4.61219 17.9737 5.2452 18.3642 5.63573C18.7548 6.02612 19.3878 6.02621 19.7783 5.63573L20.4853 4.9287C20.8759 4.53839 21.5089 4.53826 21.8994 4.9287C22.2899 5.31915 22.2897 5.95222 21.8994 6.34276L19.7783 8.46483C19.5909 8.65223 19.3363 8.75671 19.0713 8.75682H16.6572L12.707 12.707C12.3165 13.0974 11.6834 13.0974 11.293 12.707C10.9025 12.3165 10.9026 11.6835 11.293 11.293L15.2422 7.34374V4.9287C15.2422 4.66356 15.3477 4.40916 15.5351 4.22167L17.6562 2.10057Z"></path>
           </svg>
         </div>
-        <h2 class="text-3xl font-bold">Misión</h2>
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 mb-2">Misión</h3>
+          <div class="h-1 w-12 bg-yellow-500 rounded-full"></div>
+        </div>
       </div>
-      <p class="text-base text-gray-700 leading-loose sm:pl-4">
-        Diseñar, calcular, construir proyectos de diversas escalas —desde pequeñas remodelaciones hasta edificios y equipamientos completos— ofreciendo soluciones inteligentes y adaptadas a cada contexto. Nuestro compromiso es enfrentar y resolver los retos técnicos, espaciales y normativos de cada proyecto con creatividad, rigor profesional y una visión funcional que mejore la vida de las personas. 
+      
+      <p class="text-base text-gray-700 leading-loose">
+        Diseñar, calcular, construir proyectos de diversas escalas —desde pequeñas remodelaciones 
+        hasta edificios y equipamientos completos— ofreciendo soluciones inteligentes y adaptadas 
+        a cada contexto. Nuestro compromiso es enfrentar y resolver los retos técnicos, espaciales 
+        y normativos de cada proyecto con creatividad, rigor profesional y una visión funcional que 
+        mejore la vida de las personas.
       </p>
     </div>
 
     <!-- Visión -->
-    <div class="group">
+    <div class="bg-white rounded-2xl p-8 md:p-10 border-2 border-gray-100 hover:border-yellow-500 transition-all duration-300 group">
       <div class="flex items-start gap-4 mb-6">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center">
-          <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-yellow-500/10 flex items-center justify-center group-hover:bg-yellow-500 transition-all duration-300">
+          <svg class="w-7 h-7 text-yellow-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
           </svg>
         </div>
-        <h2 class="text-3xl font-bold">Visión</h2>
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 mb-2">Visión</h3>
+          <div class="h-1 w-12 bg-yellow-500 rounded-full"></div>
+        </div>
       </div>
-      <p class="text-base text-gray-700 leading-loose sm:pl-4">
-        Consolidarnos como un estudio referente en el país y competir al nivel de firmas internacionales de arquitectura y construcción. Buscamos convertirnos en un hito en soluciones habitacionales, estructurales y constructivas, destacando por nuestra calidad, innovación, eficiencia y un servicio enfocado en la excelencia y la experiencia del cliente.
+      
+      <p class="text-base text-gray-700 leading-loose">
+        Consolidarnos como un estudio referente en el país y competir al nivel de firmas 
+        internacionales de arquitectura y construcción. Buscamos convertirnos en un hito en 
+        soluciones habitacionales, estructurales y constructivas, destacando por nuestra calidad, 
+        innovación, eficiencia y un servicio enfocado en la excelencia y la experiencia del cliente.
       </p>
     </div>
+
   </div>
 
-        <!-- Redes sociales -->
-<!--         <div class="flex gap-3 pt-4">
-          <a 
-            class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 hover:border-yellow-500 hover:bg-yellow-500 transition-all group" 
-            href="#" 
-            aria-label="LinkedIn"
-          >
-            <svg class="w-5 h-5 text-gray-700 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </a>
-          <a 
-            class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-200 hover:border-yellow-500 hover:bg-yellow-500 transition-all group" 
-            href="#" 
-            aria-label="Email"
-          >
-            <svg class="w-5 h-5 text-gray-700 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-            </svg>
-          </a>
-        </div> -->
+  </div>
 
-    <!-- Section Header -->
+  <!-- Section Header -->
     <div class="mb-20 text-center max-w-3xl mx-auto">
       <span class="text-yellow-500 font-bold uppercase tracking-[0.3em] text-xs mb-4 block">
         Quiénes somos
@@ -234,5 +258,4 @@
       </p>
     </div>
 
-  </div>
 </section>
