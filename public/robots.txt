@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /404
+
+# Sitemap
+Sitemap: https://reforma3.com/sitemap.xml
+
+# Bloquear archivos innecesarios (opcional)
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
